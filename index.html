@@ -1,155 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Project Update #1 - Using GitHub</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone Project Update #1 – Using GitHub</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Web Development Capstone Project</h1>
-        <p>Capstone Project Update #1 – Organization, Media, and GitHub Pages Deployment</p>
+  <header>
+    <h1>Web Development Capstone Project</h1>
+    <p>Capstone Project Update #1 – Organization, Media, and GitHub Pages Deployment</p>
 
-        <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#gallery">Image Gallery</a></li>
-                <li><a href="#details">More Info</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Robins_Cason_CapstoneProject.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- ORIGINAL PROJECT SECTIONS (KEPT AND SLIGHTLY EXPANDED) -->
-        <section id="overview" class="card">
-            <h2>Project Overview</h2>
-            <p>
-                This project demonstrates correct file organization and website deployment using GitHub Pages.
-                It now also includes media, a CSS image gallery, and an interactive details and summary widget
-                as part of the Capstone Project Media and Interactivity update.
-            </p>
-        </section>
+  <main>
+    <!-- ORIGINAL PROJECT SECTIONS (KEPT AND SLIGHTLY EXPANDED) -->
+    <section id="overview" class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This project demonstrates correct file organization and website deployment using GitHub Pages.
+        It also shows how to incorporate media, interactivity, and now basic e-commerce features
+        as part of a continuing capstone project.
+      </p>
+    </section>
 
-        <section class="card">
-            <h2>Repository Structure</h2>
-            <ul>
-                <li><code>index.html</code> – Main webpage</li>
-                <li><code>styles.css</code> – Site styling</li>
-                <li><code>app.js</code> – JavaScript functionality</li>
-                <li><code>README.md</code> – Project overview</li>
-            </ul>
-        </section>
+    <section class="card">
+      <h2>Repository Structure</h2>
+      <ul>
+        <li><code>index.html</code> – Main web page for the capstone project.</li>
+        <li><code>Robins_Cason_CapstoneProject.html</code> – About page with additional project details.</li>
+        <li><code>products.html</code> – New Products page that will host the shopping cart.</li>
+        <li><code>styles.css</code> – Site-wide styling.</li>
+        <li><code>app.js</code> – JavaScript for media or interactive features.</li>
+      </ul>
+    </section>
 
-        <section class="card">
-            <h2>Deployment Status</h2>
-            <p>The deployed version of this project is available through GitHub Pages.</p>
+    <section id="media" class="card">
+      <h2>Media</h2>
+      <p>
+        This section highlights the media components added during the Media and Interactivity update.
+        Examples can include embedded images, audio, or video elements that support the project content.
+      </p>
+      <!-- Keep or add your real media elements here (images, audio, video, etc.) -->
+    </section>
 
-            <button id="toggleChecklist">Show deployment checklist</button>
+    <section id="gallery" class="card">
+      <h2>Image Gallery</h2>
+      <p>
+        A small gallery can be used to showcase screenshots of the site, project stages, or other
+        visuals related to the capstone work.
+      </p>
+      <!-- If you already had a gallery here, keep your existing <img> elements. -->
+    </section>
 
-            <ul id="deploymentChecklist" class="hidden">
-                <li>Repository is public.</li>
-                <li>All files are in the root directory.</li>
-                <li>GitHub Pages is enabled on the main branch.</li>
-            </ul>
-        </section>
+    <section id="details" class="card">
+      <h2>More Info</h2>
+      <p>
+        This section provides additional details such as lessons learned, deployment notes, and how
+        GitHub Pages is used to host the project. It can also summarize how the new e-commerce
+        component fits into the overall site plan.
+      </p>
+    </section>
+  </main>
 
-        <section class="card">
-            <h2>Next Steps</h2>
-            <p>
-                Future updates may include additional styling, more interactive elements, and extended content
-                to further enhance the user experience.
-            </p>
-        </section>
-
-        <!-- NEW MEDIA SECTION (MEETS "MEDIA" REQUIREMENT) -->
-        <section id="media" class="card hero-media">
-            <div class="hero-text">
-                <h2>Featured Project Media</h2>
-                <p>
-                    This featured image represents the overall theme of my capstone project.
-                    It demonstrates how visual media can reinforce the site goals and support
-                    the target audience.
-                </p>
-            </div>
-
-            <figure class="hero-image">
-                <!-- Royalty-free placeholder image hosted online -->
-                <img src="https://via.placeholder.com/600x350?text=Capstone+Project+Hero+Image"
-                     alt="Hero image that represents the capstone project.">
-                <figcaption>Hero image used to visually highlight the capstone project.</figcaption>
-            </figure>
-        </section>
-
-        <!-- NEW CSS IMAGE GALLERY (USES MULTIPLE IMAGES) -->
-        <section id="gallery" class="card photo-gallery">
-            <h2>Project Image Gallery</h2>
-            <p>
-                These images provide a visual summary of different parts of the project,
-                including layout, structure, and design choices.
-            </p>
-
-            <div class="gallery-grid">
-                <figure>
-                    <img src="https://via.placeholder.com/400x250?text=Layout+Screenshot"
-                         alt="Screenshot that shows the basic page layout.">
-                    <figcaption>Basic page layout structure.</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://via.placeholder.com/400x250?text=Navigation+Design"
-                         alt="Screenshot that shows the main navigation menu.">
-                    <figcaption>Main navigation menu design.</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://via.placeholder.com/400x250?text=Color+Scheme"
-                         alt="Screenshot that highlights the color scheme and typography.">
-                    <figcaption>Color scheme and typography choices.</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://via.placeholder.com/400x250?text=Responsive+View"
-                         alt="Screenshot that shows the site in a responsive mobile view.">
-                    <figcaption>Responsive layout on a smaller screen.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- NEW DETAILS AND SUMMARY WIDGET -->
-        <section id="details" class="card info-details">
-            <h2>More Information About This Site</h2>
-            <p>Select a topic below to expand and read more details.</p>
-
-            <details open>
-                <summary>Site Goals</summary>
-                <p>
-                    The main goal of this site is to document my progress on the capstone project while
-                    practicing semantic HTML, CSS styling, and basic interactivity.
-                </p>
-            </details>
-
-            <details>
-                <summary>Target Audience</summary>
-                <p>
-                    The site is intended for my Web Development instructor, classmates,
-                    and anyone who wants to review how I manage and deploy projects using GitHub Pages.
-                </p>
-            </details>
-
-            <details>
-                <summary>Media and Interactivity Choices</summary>
-                <p>
-                    I added a hero image, a CSS image gallery with multiple images, and this
-                    collapsible details and summary widget. These elements support the assignment
-                    requirements while keeping the site simple, accessible, and easy to navigate.
-                </p>
-            </details>
-        </section>
-    </main>
-
-    <footer>
-        <p>Created by Cason Robins – University of West Georgia</p>
-    </footer>
-
-    <script src="app.js"></script>
+  <footer>
+    <p>&copy; 2025 Cason Robins – Web Development Capstone Project</p>
+  </footer>
 </body>
 </html>
