@@ -6,72 +6,69 @@
   <title>Capstone Project Update #1 – Using GitHub</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <h1>Web Development Capstone Project</h1>
-    <p>Capstone Project Update #1 – Organization, Media, and GitHub Pages Deployment</p>
 
+<body>
+
+  <header>
+    <h1>Capstone Project Update #1 – Using GitHub</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="Robins_Cason_CapstoneProject.html">About</a></li>
         <li><a href="products.html">Products</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- ORIGINAL PROJECT SECTIONS (KEPT AND SLIGHTLY EXPANDED) -->
-    <section id="overview" class="card">
+
+    <!-- ✨ NEW: Slideshow Feature -->
+    <section class="hero">
+      <h2>Featured Specials</h2>
+
+      <div id="hero-slideshow" class="slideshow">
+        <img src="images/slide1.jpg" class="slide active" alt="Seasonal drink special">
+        <img src="images/slide2.jpg" class="slide" alt="Cozy seating area">
+        <img src="images/slide3.jpg" class="slide" alt="Fresh pastries on display">
+
+        <button type="button" class="slideshow-control" data-direction="prev">Previous</button>
+        <button type="button" class="slideshow-control" data-direction="next">Next</button>
+      </div>
+    </section>
+
+    <!-- ✨ NEW: Contact Form for Validation -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Your original main content -->
+    <section>
       <h2>Project Overview</h2>
-      <p>
-        This project demonstrates correct file organization and website deployment using GitHub Pages.
-        It also shows how to incorporate media, interactivity, and now basic e-commerce features
-        as part of a continuing capstone project.
-      </p>
+      <p>This project demonstrates using GitHub for version control and website hosting.</p>
     </section>
 
-    <section class="card">
-      <h2>Repository Structure</h2>
-      <ul>
-        <li><code>index.html</code> – Main web page for the capstone project.</li>
-        <li><code>Robins_Cason_CapstoneProject.html</code> – About page with additional project details.</li>
-        <li><code>products.html</code> – New Products page that will host the shopping cart.</li>
-        <li><code>styles.css</code> – Site-wide styling.</li>
-        <li><code>app.js</code> – JavaScript for media or interactive features.</li>
-      </ul>
-    </section>
-
-    <section id="media" class="card">
-      <h2>Media</h2>
-      <p>
-        This section highlights the media components added during the Media and Interactivity update.
-        Examples can include embedded images, audio, or video elements that support the project content.
-      </p>
-      <!-- Keep or add your real media elements here (images, audio, video, etc.) -->
-    </section>
-
-    <section id="gallery" class="card">
-      <h2>Image Gallery</h2>
-      <p>
-        A small gallery can be used to showcase screenshots of the site, project stages, or other
-        visuals related to the capstone work.
-      </p>
-      <!-- If you already had a gallery here, keep your existing <img> elements. -->
-    </section>
-
-    <section id="details" class="card">
-      <h2>More Info</h2>
-      <p>
-        This section provides additional details such as lessons learned, deployment notes, and how
-        GitHub Pages is used to host the project. It can also summarize how the new e-commerce
-        component fits into the overall site plan.
-      </p>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Cason Robins – Web Development Capstone Project</p>
+    <p>&copy; 2025 Capstone Project</p>
   </footer>
+
+  <!-- ✨ NEW: Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">↑ Top</button>
+
+  <!-- ✨ JavaScript File -->
+  <script src="app.js"></script>
+
 </body>
 </html>
