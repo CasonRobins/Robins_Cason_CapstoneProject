@@ -1,293 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Products | Cason Robins Capstone Project</title>
-<meta name="description" content="Browse the sample products featured in my capstone project. This page demonstrates organized product listings, clean layout, and responsive design elements.">
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Light extra styling for the products and cart so it looks clean
-       without changing the rest of your site */
-    .product-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin: 1.5rem 0;
-    }
-
-    .product {
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1rem;
-      max-width: 260px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .product h3 {
-      margin-top: 0;
-    }
-
-    .price {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .product button {
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .cart-section {
-      margin-top: 2rem;
-      border-top: 1px solid #ddd;
-      padding-top: 1.5rem;
-    }
-
-    #cart-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1rem;
-    }
-
-    #cart-table th,
-    #cart-table td {
-      border: 1px solid #ddd;
-      padding: 0.5rem;
-      text-align: left;
-    }
-
-    #cart-table th {
-      background-color: #f9f9f9;
-    }
-
-    .cart-actions button {
-      margin-right: 0.5rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .cart-empty {
-      font-style: italic;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Browse the sample products featured in my capstone project. This page demonstrates a product comparison table and a simple shopping cart." />
+    <meta name="keywords" content="products, shopping cart, table, web development capstone" />
+    <meta name="author" content="Cason Robins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Cason Robins Capstone Project</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Cason Robins Capstone Project – Products</h1>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-    </ul>
-</nav>
-  </header>
+    <!-- Navigation copied from index.html -->
+    <header>
+        <h1>Capstone Project – Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="Robins_Cason_CapstoneProject.html">Project Overview</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <h2>Our Products</h2>
-    <p>
-        Browse our featured products below. Use the shopping cart buttons to add items
-        and proceed through a simple checkout demo.
-    </p>
+    <main class="content">
+        <h2>Our Products</h2>
+        <p>
+            Browse our featured products below. Use the shopping cart buttons to add items
+            and proceed through a simple checkout demo.
+        </p>
 
-    <h3>Product Comparison Table</h3>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Product One</td>
-                <td>Short description of Product One and what makes it valuable.</td>
-                <td>$24.99</td>
-            </tr>
-            <tr>
-                <td>Product Two</td>
-                <td>Short description of Product Two and its main features.</td>
-                <td>$39.99</td>
-            </tr>
-            <tr>
-                <td>Product Three</td>
-                <td>Short description of Product Three aimed at your target customer.</td>
-                <td>$14.99</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- TABLE FOR RUBRIC: PRODUCT COMPARISON -->
+        <h3>Product Comparison Table</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product One</td>
+                    <td>Short description of Product One and what makes it valuable.</td>
+                    <td>$24.99</td>
+                </tr>
+                <tr>
+                    <td>Product Two</td>
+                    <td>Short description of Product Two and its main features.</td>
+                    <td>$39.99</td>
+                </tr>
+                <tr>
+                    <td>Product Three</td>
+                    <td>Short description of Product Three aimed at your target customer.</td>
+                    <td>$14.99</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- Product list -->
-    <section class="product-list">
-        <article class="product">
-            <h3>Product One</h3>
-            <p>Short description of Product One and what makes it valuable.</p>
-            <p class="price">$24.99</p>
-            <button onclick="addToCart('Product One', 24.99)">Add to Cart</button>
-        </article>
+        <!-- PRODUCT CARDS + CART (BONUS FEATURE) -->
+        <section class="product-list">
+            <article class="product">
+                <h3>Product One</h3>
+                <p>Short description of Product One and what makes it valuable.</p>
+                <p class="price">$24.99</p>
+                <button type="button" onclick="addToCart('Product One', 24.99)">Add to Cart</button>
+            </article>
 
-        <article class="product">
-            <h3>Product Two</h3>
-            <p>Short description of Product Two and its main features.</p>
-            <p class="price">$39.99</p>
-            <button onclick="addToCart('Product Two', 39.99)">Add to Cart</button>
-        </article>
+            <article class="product">
+                <h3>Product Two</h3>
+                <p>Short description of Product Two and its main features.</p>
+                <p class="price">$39.99</p>
+                <button type="button" onclick="addToCart('Product Two', 39.99)">Add to Cart</button>
+            </article>
 
-        <article class="product">
-            <h3>Product Three</h3>
-            <p>Short description of Product Three aimed at your target customer.</p>
-            <p class="price">$14.99</p>
-            <button onclick="addToCart('Product Three', 14.99)">Add to Cart</button>
-        </article>
-    </section>
+            <article class="product">
+                <h3>Product Three</h3>
+                <p>Short description of Product Three aimed at your target customer.</p>
+                <p class="price">$14.99</p>
+                <button type="button" onclick="addToCart('Product Three', 14.99)">Add to Cart</button>
+            </article>
+        </section>
 
-    <h2>Shopping Cart</h2>
-    <div id="cart">
-        <p>Your cart is currently empty.</p>
-    </div>
+        <h2>Shopping Cart</h2>
 
-    <button onclick="clearCart()">Clear Cart</button>
-    <button onclick="checkout()">Proceed to Checkout</button>
-</main>
+        <table id="cart-table" border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <tr id="cart-empty">
+                    <td colspan="5">Your cart is currently empty.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total</strong></td>
+                    <td id="cart-total">$0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
 
-  <footer>
-    <p>&copy; 2025 Cason Robins Capstone Project</p>
-  </footer>
+        <div class="cart-actions">
+            <button type="button" onclick="clearCart()">Clear Cart</button>
+            <button type="button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </main>
 
-  <!-- Simple JavaScript-based shopping cart -->
-  <script>
-    // Basic in-memory cart structure: { id, name, price, quantity }
-    const cart = [];
+    <footer>
+        <p>&copy; 2025 Cason Robins Capstone Project.</p>
+    </footer>
 
-    function renderCart() {
-      const container = document.getElementById('cart-container');
+    <!-- SIMPLE CART SCRIPT JUST FOR THIS PAGE -->
+    <script>
+        const cart = {};
 
-      if (cart.length === 0) {
-        container.innerHTML = '<p class="cart-empty">Your cart is currently empty.</p>';
-        return;
-      }
-
-      let tableHtml = '<table id="cart-table">';
-      tableHtml += '<thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Subtotal</th><th>Remove</th></tr></thead>';
-      tableHtml += '<tbody>';
-
-      let total = 0;
-
-      cart.forEach((item, index) => {
-        const subtotal = item.price * item.quantity;
-        total += subtotal;
-
-        tableHtml +=
-          '<tr>' +
-            '<td>' + item.name + '</td>' +
-            '<td>$' + item.price.toFixed(2) + '</td>' +
-            '<td>' +
-              '<input type="number" min="1" value="' + item.quantity + '" ' +
-              'data-index="' + index + '" class="cart-qty-input" />' +
-            '</td>' +
-            '<td>$' + subtotal.toFixed(2) + '</td>' +
-            '<td><button class="remove-item" data-index="' + index + '">X</button></td>' +
-          '</tr>';
-      });
-
-      tableHtml += '</tbody>';
-      tableHtml += '<tfoot><tr><th colspan="3">Total</th><th colspan="2">$' + total.toFixed(2) + '</th></tr></tfoot>';
-      tableHtml += '</table>';
-
-      container.innerHTML = tableHtml;
-
-      // Attach handlers for quantity changes and remove buttons
-      const qtyInputs = container.querySelectorAll('.cart-qty-input');
-      qtyInputs.forEach(input => {
-        input.addEventListener('change', (event) => {
-          const index = parseInt(event.target.getAttribute('data-index'), 10);
-          let newQty = parseInt(event.target.value, 10);
-          if (isNaN(newQty) || newQty < 1) {
-            newQty = 1;
-          }
-          cart[index].quantity = newQty;
-          renderCart();
-        });
-      });
-
-      const removeButtons = container.querySelectorAll('.remove-item');
-      removeButtons.forEach(button => {
-        button.addEventListener('click', (event) => {
-          const index = parseInt(event.target.getAttribute('data-index'), 10);
-          cart.splice(index, 1);
-          renderCart();
-        });
-      });
-    }
-
-    function addToCart(id, name, price) {
-      const existing = cart.find(item => item.id === id);
-      if (existing) {
-        existing.quantity += 1;
-      } else {
-        cart.push({
-          id: id,
-          name: name,
-          price: price,
-          quantity: 1
-        });
-      }
-      renderCart();
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // Hook up all "Add to Cart" buttons
-      const addButtons = document.querySelectorAll('.add-to-cart');
-      addButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const id = button.getAttribute('data-id');
-          const name = button.getAttribute('data-name');
-          const price = parseFloat(button.getAttribute('data-price'));
-          addToCart(id, name, price);
-        });
-      });
-
-      // Clear cart button
-      document.getElementById('clear-cart').addEventListener('click', () => {
-        cart.length = 0;
-        renderCart();
-      });
-
-      // Checkout button – simple demo flow
-      document.getElementById('checkout').addEventListener('click', () => {
-        if (cart.length === 0) {
-          alert('Your cart is empty. Add at least one item before checking out.');
-          return;
+        function formatMoney(value) {
+            return "$" + value.toFixed(2);
         }
 
-        let summary = 'Order summary:\\n\\n';
-        let total = 0;
-        cart.forEach(item => {
-          const subtotal = item.price * item.quantity;
-          total += subtotal;
-          summary += item.quantity + ' × ' + item.name +
-                     ' ($' + item.price.toFixed(2) + ') = $' +
-                     subtotal.toFixed(2) + '\\n';
-        });
-        summary += '\\nTotal: $' + total.toFixed(2) +
-                   '\\n\\nThis is a demo checkout. In a real site, you would now be redirected to a secure payment page.';
+        function renderCart() {
+            const tbody = document.getElementById("cart-body");
+            const emptyRow = document.getElementById("cart-empty");
+            let total = 0;
 
-        alert(summary);
-      });
+            // Clear all rows except the template "empty" row
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
 
-      // Initial render
-      renderCart();
-    });
-  </script>
+            const productNames = Object.keys(cart);
+            if (productNames.length === 0) {
+                const row = document.createElement("tr");
+                row.id = "cart-empty";
+                const cell = document.createElement("td");
+                cell.colSpan = 5;
+                cell.textContent = "Your cart is currently empty.";
+                row.appendChild(cell);
+                tbody.appendChild(row);
+                document.getElementById("cart-total").textContent = "$0.00";
+                return;
+            }
+
+            productNames.forEach(name => {
+                const item = cart[name];
+                const row = document.createElement("tr");
+
+                const nameCell = document.createElement("td");
+                nameCell.textContent = name;
+
+                const priceCell = document.createElement("td");
+                priceCell.textContent = formatMoney(item.price);
+
+                const qtyCell = document.createElement("td");
+                const qtyInput = document.createElement("input");
+                qtyInput.type = "number";
+                qtyInput.min = "1";
+                qtyInput.value = item.quantity;
+                qtyInput.addEventListener("change", () => {
+                    const newQty = parseInt(qtyInput.value, 10) || 1;
+                    item.quantity = newQty;
+                    renderCart();
+                });
+                qtyCell.appendChild(qtyInput);
+
+                const subCell = document.createElement("td");
+                const subtotal = item.price * item.quantity;
+                subCell.textContent = formatMoney(subtotal);
+                total += subtotal;
+
+                const removeCell = document.createElement("td");
+                const removeBtn = document.createElement("button");
+                removeBtn.type = "button";
+                removeBtn.textContent = "X";
+                removeBtn.addEventListener("click", () => {
+                    delete cart[name];
+                    renderCart();
+                });
+                removeCell.appendChild(removeBtn);
+
+                row.appendChild(nameCell);
+                row.appendChild(priceCell);
+                row.appendChild(qtyCell);
+                row.appendChild(subCell);
+                row.appendChild(removeCell);
+
+                tbody.appendChild(row);
+            });
+
+            document.getElementById("cart-total").textContent = formatMoney(total);
+        }
+
+        function addToCart(name, price) {
+            if (!cart[name]) {
+                cart[name] = { price: price, quantity: 1 };
+            } else {
+                cart[name].quantity += 1;
+            }
+            renderCart();
+        }
+
+        function clearCart() {
+            for (const key in cart) {
+                delete cart[key];
+            }
+            renderCart();
+        }
+
+        function checkout() {
+            const items = Object.keys(cart);
+            if (items.length === 0) {
+                alert("Your cart is empty. Add something before checking out!");
+                return;
+            }
+            alert("Thank you for using the demo checkout! (No real purchase is made.)");
+        }
+
+        // Initial render
+        renderCart();
+    </script>
 </body>
 </html>
