@@ -92,70 +92,73 @@
 </nav>
   </header>
 
-  <main>
+<main>
     <h2>Our Products</h2>
     <p>
-      Browse our featured products below. Use the shopping cart buttons to add items
-      and proceed through a simple checkout demo.
+        Browse our featured products below. Use the shopping cart buttons to add items
+        and proceed through a simple checkout demo.
     </p>
+
+    <h3>Product Comparison Table</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product One</td>
+                <td>Short description of Product One and what makes it valuable.</td>
+                <td>$24.99</td>
+            </tr>
+            <tr>
+                <td>Product Two</td>
+                <td>Short description of Product Two and its main features.</td>
+                <td>$39.99</td>
+            </tr>
+            <tr>
+                <td>Product Three</td>
+                <td>Short description of Product Three aimed at your target customer.</td>
+                <td>$14.99</td>
+            </tr>
+        </tbody>
+    </table>
 
     <!-- Product list -->
     <section class="product-list">
-      <article class="product">
-        <h3>Product One</h3>
-        <p>Short description of Product One and what makes it valuable.</p>
-        <p class="price">$24.99</p>
-        <button class="add-to-cart"
-                data-id="p1"
-                data-name="Product One"
-                data-price="24.99">
-          Add to Cart
-        </button>
-      </article>
+        <article class="product">
+            <h3>Product One</h3>
+            <p>Short description of Product One and what makes it valuable.</p>
+            <p class="price">$24.99</p>
+            <button onclick="addToCart('Product One', 24.99)">Add to Cart</button>
+        </article>
 
-      <article class="product">
-        <h3>Product Two</h3>
-        <p>Short description of Product Two and its main features.</p>
-        <p class="price">$39.99</p>
-        <button class="add-to-cart"
-                data-id="p2"
-                data-name="Product Two"
-                data-price="39.99">
-          Add to Cart
-        </button>
-      </article>
+        <article class="product">
+            <h3>Product Two</h3>
+            <p>Short description of Product Two and its main features.</p>
+            <p class="price">$39.99</p>
+            <button onclick="addToCart('Product Two', 39.99)">Add to Cart</button>
+        </article>
 
-      <article class="product">
-        <h3>Product Three</h3>
-        <p>Short description of Product Three aimed at your target customer.</p>
-        <p class="price">$14.99</p>
-        <button class="add-to-cart"
-                data-id="p3"
-                data-name="Product Three"
-                data-price="14.99">
-          Add to Cart
-        </button>
-      </article>
+        <article class="product">
+            <h3>Product Three</h3>
+            <p>Short description of Product Three aimed at your target customer.</p>
+            <p class="price">$14.99</p>
+            <button onclick="addToCart('Product Three', 14.99)">Add to Cart</button>
+        </article>
     </section>
 
-    <!-- Shopping cart -->
-    <section class="cart-section">
-      <h2>Shopping Cart</h2>
-      <p>
-        Items you add will appear in the cart below. You can adjust quantities,
-        remove items, and walk through a basic checkout experience.
-      </p>
+    <h2>Shopping Cart</h2>
+    <div id="cart">
+        <p>Your cart is currently empty.</p>
+    </div>
 
-      <div id="cart-container">
-        <p class="cart-empty">Your cart is currently empty.</p>
-      </div>
-
-      <div class="cart-actions">
-        <button id="clear-cart">Clear Cart</button>
-        <button id="checkout">Proceed to Checkout</button>
-      </div>
-    </section>
-  </main>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Proceed to Checkout</button>
+</main>
 
   <footer>
     <p>&copy; 2025 Cason Robins Capstone Project</p>
